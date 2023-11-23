@@ -1,11 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+    <title>Home</title>
+    <style>
+       
+
+        nav {
+            background-color: transparent;
+            text-align: center;
+        }
+
+            nav a {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+                nav a:hover {
+                    background-color: gold;
+                }
+
+
+
+        #profile-pic {
+            border-radius: 50%;
+            float: right;
+            margin-left: 20px;
+        }
+
+            #profile-pic:hover {
+                box-shadow: 0 0 20px gold;
+            }
+
+
+        #Letters {
+            font-family: Monospace;
+            color: white;
+            text-align: center;
+            float: center;
+            font-size: 40px;
+           margin-top: 300px;
+        }
+
+
+        #about-button {
+            font-family: Monospace;
+           
+            float: left;
+            font-size: 10px;
+            margin-top: -10px;
+           margin-left: 430px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 5px;
+            text-decoration: none;
+  
+            transition: background-color 0.3s ease-in-out;
+        }
+
+            #about-button:hover {
+                background-color: gold;
+            }
+    </style>
+</head>
+<body style="background-image: url('goldbackground.jpg'); background-size: cover; background-repeat: no-repeat;">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="skill.html">Skill Sets</a>
+    </nav>
+
+    <img id="profile-pic" src="proficpicgold.png" alt="My Profile Picture" width="500" height="600">
+
+    <div id="Letters">
+        <h1>Marzook Mansoor</h1>
+    </div>
+
+    <button id="about-button" onclick="window.location.href='about.html'">About Me</button>
+
+
+</body>
 </html>
